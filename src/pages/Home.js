@@ -13,7 +13,7 @@ import Lucas from "../../assets/Lucas.jpg"
 import Renato from "../../assets/Renato.jpg"
 
 
-export default function Home() {
+export default function Home({ navigation }) {
   return (
     <View style={styles.container}>
       <Navbar />

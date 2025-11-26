@@ -2,21 +2,26 @@ import * as React from 'react';
 import { View, StyleSheet } from 'react-native';
 import { Button } from 'react-native-paper';
 
+import { useNavigation } from '@react-navigation/native';
 
-const But = ({ navigation }) => (
-  <View style={styles.container}> 
-    <View style={styles.shadowWrapper}>  
-      <Button 
-        mode="contained" 
-        onPress={() => navigation.navigate('Home')} 
-        style={styles.button}
-        labelStyle={styles.buttonText}
-      >
-        Login
-      </Button>
+const But = () => {
+  const navigation = useNavigation();
+
+  return (
+    <View style={styles.container}> 
+      <View style={styles.shadowWrapper}>  
+        <Button 
+          mode="contained" 
+          onPress={() => navigation.navigate('Login')} 
+          style={styles.button}
+          labelStyle={styles.buttonText}
+        >
+          Login
+        </Button>
+      </View>
     </View>
-  </View>
-);
+  );
+};
 
 const styles = StyleSheet.create({
   container: {
