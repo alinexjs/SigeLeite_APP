@@ -1,6 +1,9 @@
 import * as React from "react";
 import { Dimensions } from "react-native";
 import { Card, Avatar } from "react-native-paper";
+import { View } from "react-native";
+import FontAwesome from "@expo/vector-icons/FontAwesome";
+
 
 const { width } = Dimensions.get("window");
 
@@ -8,9 +11,9 @@ const CardImg = ({ image, title, subtitle }) => {
     return (
         <Card
             style={{
-                width: width * 0.45,
+                width: (width / 2) - 24,
                 height: 104,
-                margin: 10,
+                margin: 8,
                 borderTopLeftRadius: 50,
                 borderBottomLeftRadius: 50,
                 justifyContent: "center",
@@ -21,9 +24,12 @@ const CardImg = ({ image, title, subtitle }) => {
                 style={{ paddingLeft: 0 }}
                 title={title}
                 subtitle={subtitle}
-                titleStyle={{ fontSize: 16, textAlign: "right" }}
-                subtitleStyle={{ fontSize: 14.5, textAlign: "right" }}
+                
+
+                titleStyle={{ fontSize: 16, textAlign: "right", color:"#86888A"}}
+                subtitleStyle={{ fontSize: 14.5, textAlign: "right", color:"#86888A" }}
                 leftStyle={{ marginLeft: 0 }}
+
                 left={() => (
                     <Avatar.Image
                         style={{ marginRight: 10 }}

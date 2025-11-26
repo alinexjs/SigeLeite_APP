@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, Image, StyleSheet, Platform } from "react-native";
+import { View, Text, Image, StyleSheet } from "react-native";
 import { Card } from "react-native-paper";
 
 import Logo2 from "../../assets/Logo2.png";
@@ -20,7 +20,7 @@ export default function Cardcomponent() {
         </View>
       </View>
 
-      
+
       <View style={styles.rowContent}>
 
         {/* IMAGENS*/}
@@ -42,11 +42,9 @@ export default function Cardcomponent() {
           </Text>
 
           <Text style={styles.textDescription}>
-Nosso objetivo é facilitar seu trabalho, aumentar a produtividade e economizar tempo para melhores resultados.          </Text>
+            Nosso objetivo é facilitar seu trabalho, aumentar a produtividade e economizar tempo para melhores resultados. </Text>
         </View>
-
       </View>
-
     </Card>
   );
 }
@@ -82,10 +80,10 @@ const styles = StyleSheet.create({
     textShadowRadius: 4,
   },
 
-  
+
   rowContent: {
     flexDirection: "row",
-    marginTop: 80, 
+    marginTop: 80,
   },
 
   imagesContainer: {
@@ -113,7 +111,7 @@ const styles = StyleSheet.create({
   /* TEXTOS */
   textContainer: {
     flex: 1,
-    paddingLeft: 15,  
+    paddingLeft: 15,
     justifyContent: "center",
   },
 
